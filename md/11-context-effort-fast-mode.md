@@ -1,14 +1,15 @@
 # Context Window, Effort Levels & Fast Mode
 
-> 1M Context: v2.1.71 | /effort: v2.1.66 | Fast Mode: v2.1.50 | Latest: v2.1.76
+> 1M Context: v2.1.71 | /effort: v2.1.66 | Fast Mode: v2.1.50 | Latest: v2.1.283 (September 2026)
+> **Now with**: Opus 5.5 default (1M token context), enhanced fast mode, improved terminal controls
 
 ## What They Are
 
 Three related features that control how Claude Code thinks:
 
-- **1M Token Context Window** — 5x larger context, now default for Opus 4.6
+- **1M Token Context Window** — Standard with Claude Opus 5.5 (improved from 200K in Opus 4.6)
 - **`/effort` Command** — Dial reasoning depth up or down per session
-- **Fast Mode** — Same model, faster output, lower latency
+- **Fast Mode** — 3x faster output, now cloud-optimized (September 2026)
 
 Plus complementary session management:
 - **`/context` Command** — See what's consuming your context and get optimization tips
@@ -19,9 +20,9 @@ Plus complementary session management:
 
 ## 1M Token Context Window
 
-### What Changed
+### What Changed (September 2026)
 
-Previously, Opus had a 200K token context window. Now **1M tokens** is the default for Opus 4.6 on Max, Team, and Enterprise plans.
+Claude Opus 5.5 now features **1M tokens** as the default context window (previously 200K in Opus 4.6). Available on all Claude Code plans.
 
 ### What 1M Tokens Means in Practice
 

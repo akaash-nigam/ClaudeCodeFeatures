@@ -1,6 +1,7 @@
 # MCP Servers (Model Context Protocol)
 
-> Introduced: v1.0.52 (May 2025) | Latest enhancements: v2.1.76
+> Introduced: v1.0.52 (May 2025) | Latest enhancements: v2.1.283 (September 2026)
+> Works best with: Claude Opus 5.5 (default) or Sonnet 5
 
 ## What It Is
 

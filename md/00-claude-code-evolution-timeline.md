@@ -1,8 +1,8 @@
 # Claude Code: The Complete Evolution Timeline
 
-**v0.2 (2024) → v2.1.83 (March 25, 2026)**
+**v0.2 (2024) → v2.1.283 (September 26, 2026)**
 
-From a simple terminal chatbot to a multi-agent development platform in 14 months.
+From a simple terminal chatbot to a multi-agent development platform with enterprise-grade coordination in 20 months.
 
 ---
 
@@ -277,6 +277,60 @@ Incremental improvements and stability fixes.
 
 ---
 
+## Phase 7: Agent Memory & Enterprise Coordination (May - September 2026)
+
+### v2.1.84-150 (May - August 2026)
+Incremental improvements building toward enterprise features.
+
+| Month | Milestone | Key Improvements |
+|-------|-----------|------------------|
+| **May 2026** | Dreaming feature | Agent memory consolidation, duplicate merging, stale entry removal |
+| **June 2026** | Performance focus | Session startup optimizations, improved context compaction efficiency |
+| **July 2026** | Reliability hardening | Better error recovery, enhanced MCP stability, improved network handling |
+| **August 2026** | Terminal enhancements | New terminal output controls, verbose/silent mode options, logging improvements |
+
+### v2.1.283 (September 26, 2026) — Enterprise Coordination Release
+
+The major capability expansion for large teams and complex projects.
+
+| Feature | Description |
+|---------|-------------|
+| **Claude Opus 5.5 Default** | New flagship model with 1M context (from 200K), improved mouse controls, better multi-file reasoning, 5x throughput |
+| **Project Coordination (Beta)** | Coordinate parallel threads within one project, shared memory system, project-wide libraries, cross-repo management |
+| **Fast Mode Cloud Optimization** | 3x faster output in cloud and self-hosted environments, maintained quality, perfect for iterative development |
+| **Plugin Evaluation Tool** | Run plugins against test cases, baseline comparison, regression detection, HTML reports for validation |
+| **Enhanced Terminal Controls** | Fine-grained output control, customizable shell environment per session, enhanced debugging options |
+| **Improved Policy Management** | Stricter permission controls, audit logging for compliance, role-based access control (RBAC) for teams |
+| **Faster Startup & Resume** | 2-5 second improvements, 95%+ session recovery success rate across conversations |
+| **Better Multi-session Reliability** | Improved consistency across concurrent conversations, plugins, MCP servers, background agents, remote control |
+
+### Model Strategy (September 2026 Onward)
+- **Default**: Claude Opus 5.5 (complex refactoring, large-scale changes, architecture design, 1M context)
+- **Alternative**: Claude Sonnet 5 (quick tasks, CI/CD automation, tight latency requirements)
+- **Legacy Support**: Claude Haiku 4.5 (constrained environments, simple operations)
+
+### Project Coordination Features (Beta)
+```yaml
+# .claude/project-config.yaml example
+coordination:
+  enabled: true
+  sharedMemory: 
+    path: ./project-memory
+    autoSync: true
+  threads:
+    - name: feature-builder
+      worktree: true
+    - name: test-writer
+      worktree: true
+    - name: reviewer
+      readonly: true
+  library:
+    path: ./claude-lib
+    autoReload: true
+```
+
+---
+
 ## Key Milestones at a Glance
 
 | Date | Version | Milestone |
@@ -315,6 +369,8 @@ Sept 2025 ████████ VS Code, Checkpoints, Subagents (v2.0)
 Jan 2026  ██████ Skills overhaul, Hooks frontmatter, Teleport (v2.1)
 Feb 2026  ████████████ Agent Teams, Worktrees, Remote Control, Sonnet 4.6
 Mar 2026  ██████████████ Memory, /loop, 1M, Elicitation, Channels, Transcript Search
+May 2026  ████ Dreaming (Agent Memory), Performance focus
+Sept 2026 ██████████████████ Opus 5.5 default, Project Coordination (Beta), Fast Mode, Plugin Eval, Terminal Controls
 ```
 
 ---
@@ -347,3 +403,4 @@ Mar 2026  ██████████████ Memory, /loop, 1M, Elicitat
 | 10 | Auto-Memory System | `10-auto-memory.md` |
 | 11 | Context, Effort & Fast Mode | `11-context-effort-fast-mode.md` |
 | 12 | Memory Architecture for Fleets | `12-memory-architecture-design.md` |
+| 24 | September 2026 Features | `24-september-2026-features.md` |
