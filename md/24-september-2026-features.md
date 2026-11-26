@@ -1,7 +1,9 @@
 # Claude Code September 2026 Release: New Features & Capabilities
 
 *Last Updated: September 26, 2026*
-*Baseline: v2.1.283 (Current Stable)*
+*Baseline: v2.1.283*
+
+> **📌 This snapshot has been superseded.** For the latest features (v2.1.332, November 2026), see [`25-october-november-2026-features.md`](25-october-november-2026-features.md).
 
 ---
 

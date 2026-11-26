@@ -1,8 +1,8 @@
 # Claude Code: The Complete Evolution Timeline
 
-**v0.2 (2024) → v2.1.283 (September 26, 2026)**
+**v0.2 (2024) → v2.1.332 (November 25, 2026)**
 
-From a simple terminal chatbot to a multi-agent development platform with enterprise-grade coordination in 20 months.
+From a simple terminal chatbot to a multi-agent development platform with enterprise-grade coordination in 22 months.
 
 ---
 
@@ -331,6 +331,51 @@ coordination:
 
 ---
 
+## Phase 8: Cloud Platform Expansion & Orchestration GA (October - November 2026)
+
+~56 releases (v2.1.284 → v2.1.332) pushing Claude Code onto every major cloud platform and making multi-agent orchestration mainstream. See `25-october-november-2026-features.md` for the full deep-dive.
+
+### Code Review GA (October 15, 2026)
+| Feature | Description |
+|---------|-------------|
+| **Three Review Levels** | Quick / Standard (default) / Deep |
+| **Trigger Options** | On PR open, on every push, or `@claude review` comment |
+| **6–10 Minute Reviews** | Down from ~20 minutes in preview |
+| **`/code-review ultra`** | Deep multi-agent cloud review of a branch or PR |
+
+### Dynamic Workflows Public Beta (October 9, 2026)
+| Feature | Description |
+|---------|-------------|
+| **Workflow Tool (local)** | Claude writes JS coordination scripts: `agent()`, `parallel()`, `pipeline()` |
+| **Managed Agents API** | `multiagent_20261001` beta — up to 1,000 subagents, 64 concurrent threads |
+| **Ultracode Opt-In** | "ultracode" keyword or session toggle required for workflow-scale fan-out |
+
+### v2.1.290-316 (October 2026)
+| Version | Highlights |
+|---------|-----------|
+| **v2.1.290** (Oct 5) | WebSearch budget: 200-call fixed → 100-call hourly refill |
+| **v2.1.300** (Oct 14) | 88 changes; OpenTelemetry `gen_ai.*` spans; agent transcript viewing |
+| **v2.1.310** (Oct 23) | Monitor tool on Bedrock/Vertex/Foundry; 26 fixes |
+| **v2.1.315** (Oct 30) | Fast-mode-on-Opus-4.8 deprecation begins (expires Nov 30); pooled group budgets |
+| **v2.1.316** (Oct 31) | `ultrathink` → xhigh effort; `CLAUDE_CODE_DISABLE_ULTRATHINK`; subagent effort controls |
+
+### v2.1.317-332 (November 2026)
+| Version | Highlights |
+|---------|-----------|
+| **v2.1.317** (Nov 2) | Email-leak prevention check; NTFS/exFAT fixes |
+| **v2.1.322** (Nov 10) | Fast mode on Vertex AI (global/us/eu) |
+| **v2.1.330** (Nov 20) | Enterprise Admin Console sign-in, Easel built-in charting, VS Code workflow tools — 142 changes |
+| **v2.1.331** (Nov 23) | Code Mode GA on Bedrock/Vertex/Foundry/AWS; `PreSkillShellCommand` hook; `claude doctor` connectivity diagnostics |
+| **v2.1.332** (Nov 24-25) | MCP server skills (beta, `server:skill` namespacing); cloud model routing to Sonnet/Opus 5.5; 93 bug fixes; breaking changes (`computer-use` reserved name, `oat02-` token prefix, OTel service name) |
+
+### Model Lineup (Fall 2026)
+- **Claude Fable 5.2** (Nov 9, 2026) — current default Fable model, 1M context
+- **Claude Opus 5.5** — default since Sep 22; $4/$20 per Mtok, xhigh effort default
+- **Claude Sonnet 5.5** — new default on Foundry and Pro plans
+- **Opus 4.8 fast mode** — deprecated, dead after November 30, 2026
+
+---
+
 ## Key Milestones at a Glance
 
 | Date | Version | Milestone |
@@ -355,6 +400,15 @@ coordination:
 | Mar 19, 2026 | v2.1.80 | Rate limits in statusline, --channels preview, skill effort |
 | Mar 20, 2026 | v2.1.81 | --bare mode, channel permission relay, worktree resume |
 | Mar 25, 2026 | v2.1.83 | Drop-in policies, CwdChanged/FileChanged hooks, transcript search |
+| Sept 22, 2026 | v2.1.280 | Claude Opus 5.5 becomes default model |
+| Sept 26, 2026 | v2.1.283 | Enterprise Coordination release (Project Coordination Beta) |
+| Oct 9, 2026 | — | Dynamic Workflows / Managed Agents public beta (1,000 subagents) |
+| Oct 15, 2026 | — | Code Review GA (Team & Enterprise) |
+| Oct 31, 2026 | v2.1.316 | ultrathink xhigh effort, subagent effort controls |
+| Nov 9, 2026 | — | Claude Fable 5.2 released |
+| Nov 20, 2026 | v2.1.330 | Enterprise sign-in, Easel charting, VS Code workflow tools |
+| Nov 23, 2026 | v2.1.331 | Code Mode GA on cloud platforms, PreSkillShellCommand hook |
+| Nov 24, 2026 | v2.1.332 | MCP server skills (beta), 93 fixes, cloud model routing to 5.5 family |
 
 ---
 
@@ -371,6 +425,8 @@ Feb 2026  ████████████ Agent Teams, Worktrees, Remote Co
 Mar 2026  ██████████████ Memory, /loop, 1M, Elicitation, Channels, Transcript Search
 May 2026  ████ Dreaming (Agent Memory), Performance focus
 Sept 2026 ██████████████████ Opus 5.5 default, Project Coordination (Beta), Fast Mode, Plugin Eval, Terminal Controls
+Oct 2026  ████████████ Dynamic Workflows beta, Code Review GA, ultrathink xhigh, Monitor on cloud
+Nov 2026  ██████████████ Fable 5.2, Code Mode cloud GA, MCP server skills, Easel charts, Enterprise sign-in
 ```
 
 ---
@@ -404,3 +460,4 @@ Sept 2026 ██████████████████ Opus 5.5 defaul
 | 11 | Context, Effort & Fast Mode | `11-context-effort-fast-mode.md` |
 | 12 | Memory Architecture for Fleets | `12-memory-architecture-design.md` |
 | 24 | September 2026 Features | `24-september-2026-features.md` |
+| 25 | October–November 2026 Features | `25-october-november-2026-features.md` |
