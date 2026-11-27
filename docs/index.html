@@ -505,6 +505,18 @@
             </div>
 
             <div class="sidebar-section">
+                <div class="sidebar-section-title">Society & Geopolitics</div>
+                <a class="sidebar-link" onclick="loadDoc('society/s1-labor-displacement')">S1: Labor Displacement</a>
+                <a class="sidebar-link" onclick="loadDoc('society/s2-token-economy')">S2: Token Economy</a>
+                <a class="sidebar-link" onclick="loadDoc('society/s3-human-premium')">S3: Human Premium</a>
+                <a class="sidebar-link" onclick="loadDoc('society/s4-compute-war')">S4: Compute War</a>
+                <a class="sidebar-link" onclick="loadDoc('society/s5-energy-geopolitics')">S5: Energy Geopolitics</a>
+                <a class="sidebar-link" onclick="loadDoc('society/s6-warfare-statecraft')">S6: Warfare & Statecraft</a>
+                <a class="sidebar-link" onclick="loadDoc('society/s7-epistemics-society')">S7: Epistemics & Society</a>
+                <a class="sidebar-link" onclick="loadDoc('society/s8-governance-race')">S8: Governance Race</a>
+            </div>
+
+            <div class="sidebar-section">
                 <div class="sidebar-section-title">Reference</div>
                 <a class="sidebar-link" onclick="loadDoc('00-claude-code-evolution-timeline')">Evolution Timeline</a>
                 <a class="sidebar-link" onclick="loadDoc('claude-code-use-cases-comprehensive')">Use Cases</a>
@@ -639,7 +651,8 @@ Start exploring from the sidebar!
             }
 
             try {
-                const response = await fetch(`https://raw.githubusercontent.com/akaash-nigam/ClaudeCodeFeatures/master/md/${docName}.md`);
+                const docPath = docName.includes('/') ? docName : `md/${docName}`;
+                const response = await fetch(`https://raw.githubusercontent.com/akaash-nigam/ClaudeCodeFeatures/master/${docPath}.md`);
                 if (!response.ok) throw new Error('Not found');
                 const markdown = await response.text();
 

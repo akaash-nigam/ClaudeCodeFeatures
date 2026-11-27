@@ -27,3 +27,7 @@ Eight studies in three tracks. Each study = parallel research agents + one synth
 Wave 1: S1 → S4 → S2 (strongest data; feed each other)
 Wave 2: S5 + S8 ("can institutions keep up")
 Wave 3: S7 + S6 + S3 (synthesis layer)
+
+## Status
+
+**All 8 studies complete — November 27, 2026.** Readable on the site under "Society & Geopolitics."
